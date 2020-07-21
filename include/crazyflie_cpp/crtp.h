@@ -1115,10 +1115,11 @@ struct crtpCommanderHighLevelTakeoffRequest
     float height,
     float duration)
     : header(0x08, 0)
-    , command(1)
+    , command(7)
     , groupMask(groupMask)
     , height(height)
     , duration(duration)
+    , useCurrentYaw(true)
     {
     }
 
@@ -1127,6 +1128,7 @@ struct crtpCommanderHighLevelTakeoffRequest
     uint8_t groupMask;        // mask for which CFs this should apply to
     float height;             // m (absolute)
     float duration;           // s (time it should take until target height is reached)
+    bool useCurrentYaw;
 } __attribute__((packed));
 CHECKSIZE(crtpCommanderHighLevelTakeoffRequest)
 
@@ -1137,10 +1139,11 @@ struct crtpCommanderHighLevelLandRequest
     float height,
     float duration)
     : header(0x08, 0)
-    , command(2)
+    , command(8)
     , groupMask(groupMask)
     , height(height)
     , duration(duration)
+    , useCurrentYaw(true)
     {
     }
 
@@ -1149,6 +1152,7 @@ struct crtpCommanderHighLevelLandRequest
     uint8_t groupMask;        // mask for which CFs this should apply to
     float height;             // m (absolute)
     float duration;           // s (time it should take until target height is reached)
+    bool useCurrentYaw;
 } __attribute__((packed));
 CHECKSIZE(crtpCommanderHighLevelLandRequest)
 
