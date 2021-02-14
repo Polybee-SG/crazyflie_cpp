@@ -1,13 +1,13 @@
 //#include <regex>
 #include <mutex>
 
-#include "Crazyflie.h"
-#include "crtp.h"
+#include "crazyflie_cpp/Crazyflie.h"
+#include "crazyflie_cpp/crtp.h"
 #include "crtpBootloader.h"
 #include "crtpNRF51.h"
 
-#include "Crazyradio.h"
-#include "CrazyflieUSB.h"
+#include "crazyflie_cpp/Crazyradio.h"
+#include "crazyflie_cpp/CrazyflieUSB.h"
 
 #include <fstream>
 #include <cstring>

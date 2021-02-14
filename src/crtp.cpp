@@ -1,7 +1,7 @@
 #include <stdint.h>
 #include <math.h>
 #include <cstring>
-#include "crtp.h"
+#include "crazyflie_cpp/crtp.h"
 
 // Note: the quaternion compression code is copied from
 // github.com/jpreiss/quatcompress

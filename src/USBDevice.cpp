@@ -1,4 +1,4 @@
-#include "USBDevice.h"
+#include "crazyflie_cpp/USBDevice.h"
 
 #include <sstream>
 #include <stdexcept>
